@@ -13,10 +13,51 @@ header{
     margin-bottom: 10%;
 }
 
-#display{
-    font-family: 'VT323', monospace;
-    ;
-}
 #number-display{
     font-size: 50px;
+    font-family: 'VT323', monospace;
+    position: relative;
+    left: 500px;
+
 }
+
+#buttons{
+    margin: auto;
+    width: 30%;
+}
+
+button{
+    padding: 30px;
+    border: 1px solid #161412;
+    border-radius: 5px;
+}
+
+#zero{
+    padding: 30px 65px 30px 68px;
+}
+
+.operator-buttons{
+    position: relative;
+    left: 10px;
+    width: 20px;
+    background-color: #161412;
+    color: white;
+    margin: 3px 0 3px 0;
+
+}
+
+#decimal{
+    padding: 30px 32px 30px 32px;
+}
+
+#clear{
+    padding: 30px 89px 30px 93px;
+    background-color: red;
+    color: white;
+}
+
+.number-selection{
+    background-color: rgb(41, 38,38);
+    color: white;
+}
+
