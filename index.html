@@ -8,43 +8,43 @@
             <h1>Welcome to my basic Calculator</h1>
             <h2>This is the final project of the Foundation branch of The Odin Project</h2>
         </header>
-        <main id="Calculator">
+        <main id="calculator">
             <div id="display">
                 <input type="text" name="number-display" class="number-display" id="number-display" value="" placeholder="Result" readonly></p>
             </div>
-            <div id="buttons">
-                <div id="top-buttons">
-                    <button id="clear" onClick="clearDisplay()"> Clear</button>
-                    <button id="equals" value="=" class="operator-buttons">=</button>
+            <table id="buttons">
+                <div id="clear-button">
+                    <th colspan="3"> <input type="button" id="clear" value="Clear" onClick="clearDisplay()"></input></td></th>
                 </div>
                 <div id="calc-buttons">
-                    <div id="top-row">
-                        <button id="seven" value="7" class="number-selection">7</button>
-                        <button id="eight" value="8" class="number-selection">8</button>
-                        <button id="nine" value="9" class="number-selection">9</button>
-                        <button id="division"value="/"  class ="operator-buttons">/</button>
+                    <tr id="first-row">
+                        <td><input type="button" id="seven" value="7" class="number-buttons"></input></td>
+                        <td><input type="button" id="eight" value="8" class="number-buttons"></input></td>
+                        <td><input type="button" id="nine" value="9" class="number-buttons"></input></td>
+                        <td><input type="button" id="division"value="/" class ="operator-buttons"></input></td>
                     </div>
-                    <div id="middle-row">
-                        <button id="four" value="4" class="number-selection">4</button>
-                        <button id="five" value="5" class="number-selection">5</button>
-                        <button id="six" value="6" class="number-selection">6</button>
-                    <button id="multiply" value="*" class="operator-buttons">x</button>
+                    <tr id="second-row">
+                        <td><input type="button" id="four" value="4" class="number-buttons"></input></td>
+                        <td><input type="button" id="five" value="5" class="number-buttons"></input></td>
+                        <td><input type="button" id="six" value="6" class="number-buttons"></input></td>
+                        <td><input type="button" id="multiply" value="*" class="operator-buttons"></input></td>
 
                     </div>
-                    <div id="bottom-row">
-                        <button id="one" value="1" class="number-selection">1</button>
-                        <button id="two" value="2" class="number-selection">2</button>
-                        <button id="three" value="3" class="number-selection">3</button>
-                        <button id="minus" value="-" class="operator-buttons">-</button>
+                    <tr id="third-row">
+                        <td><input type="button" id="one" value="1" class="number-buttons"></input></td>
+                        <td><input type="button" id="two" value="2" class="number-buttons"></input></td>
+                        <td><input type="button" id="three" value="3" class="number-buttons"></input></td>
+                        <td><input type="button" id="minus" value="-" class="operator-buttons"></input></td>
 
                     </div>
-                    <div id="zero-row">
-                        <button id="zero" value="0" class="number-selection">0</button>
-                        <button id="decimal" value="." class="number-selection">.</button>
-                        <button id="add" value="+" class="operator-buttons">+</button>
+                    <tr id="fourth-row">
+                        <td><input type="button" id="zero" value="0" class="number-buttons"></input></td>
+                        <td><input type="button" id="decimal" value="." class="number-buttons"></input></td>
+                        <td><input type="button" id="equals" value="=" class="operator-buttons"></input></td>
+                        <td><input type="button" id="add" value="+" class="operator-buttons"></input></td>
                     </div>
                 </div>
-            </div>
+            </table>
         </main>
         <script src="script.js"> </script>
     </body>

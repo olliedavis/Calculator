@@ -10,3 +10,64 @@ header{
     font-family: 'Source Code Pro', monospace;
     text-align: center;
 }
+
+#calculator{
+    margin: auto;
+    width: 30%;
+    margin-top: 5%;
+}
+
+#number-display{
+    display: block;
+    margin: auto;
+    background-color: #2f3332; 
+    border: 0;
+    border-radius: 6px;
+    width: 24vw;
+    height: 6vh;
+    text-align: end;
+    font-family: "VT323", monospace;
+    color: darkgreen;
+    font-size: 30px;
+}
+
+#number-display::placeholder{
+    color: darkgreen;
+    font-size: 30px;
+}
+
+#buttons {
+    margin: auto;
+}
+
+.number-buttons{
+    width: 6vw;
+    height: 8vh;
+    background-color: #141313;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.operator-buttons{
+    width: 6vw;
+    height: 8vh;
+    background-color: #2f3332;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 25px;
+
+
+}
+
+#clear{
+    width: 18.25vw;
+    height: 3vh;
+    background-color: #ff2a2a;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
