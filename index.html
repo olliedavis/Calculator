@@ -2,7 +2,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css"></link>
-        <script src="script.js"> </script>
     </head>
     <body>
         <header>
@@ -11,41 +10,42 @@
         </header>
         <main id="Calculator">
             <div id="display">
-                <p id="number-display"> 123456789</p>
+                <input type="text" name="number-display" class="number-display" id="number-display" value="" placeholder="Result" readonly></p>
             </div>
             <div id="buttons">
                 <div id="top-buttons">
-                    <button id="clear">Clear</button>
-                    <button id="equals" class="operator-buttons">=</button>
+                    <button id="clear" onClick="clearDisplay()"> Clear</button>
+                    <button id="equals" value="=" class="operator-buttons">=</button>
                 </div>
                 <div id="calc-buttons">
                     <div id="top-row">
-                        <button id="7" class="number-selection">7</button>
-                        <button id="8" class="number-selection">8</button>
-                        <button id="9" class="number-selection">9</button>
-                        <button id="division" class ="operator-buttons">/</button>
+                        <button id="seven" value="7" class="number-selection">7</button>
+                        <button id="eight" value="8" class="number-selection">8</button>
+                        <button id="nine" value="9" class="number-selection">9</button>
+                        <button id="division"value="/"  class ="operator-buttons">/</button>
                     </div>
                     <div id="middle-row">
-                        <button id="4" class="number-selection">4</button>
-                        <button id="5" class="number-selection">5</button>
-                        <button id="6" class="number-selection">6</button>
-                    <button id="multiply" class="operator-buttons">x</button>
+                        <button id="four" value="4" class="number-selection">4</button>
+                        <button id="five" value="5" class="number-selection">5</button>
+                        <button id="six" value="6" class="number-selection">6</button>
+                    <button id="multiply" value="*" class="operator-buttons">x</button>
 
                     </div>
                     <div id="bottom-row">
-                        <button id="1" class="number-selection">1</button>
-                        <button id="2" class="number-selection">2</button>
-                        <button id="3" class="number-selection">3</button>
-                        <button id="minus" class="operator-buttons">-</button>
+                        <button id="one" value="1" class="number-selection">1</button>
+                        <button id="two" value="2" class="number-selection">2</button>
+                        <button id="three" value="3" class="number-selection">3</button>
+                        <button id="minus" value="-" class="operator-buttons">-</button>
 
                     </div>
                     <div id="zero-row">
-                        <button id="zero" class="number-selection">0</button>
-                        <button id="decimal" class="number-selection">.</button>
-                        <button id="add" class="operator-buttons">+</button>
+                        <button id="zero" value="0" class="number-selection">0</button>
+                        <button id="decimal" value="." class="number-selection">.</button>
+                        <button id="add" value="+" class="operator-buttons">+</button>
                     </div>
                 </div>
             </div>
         </main>
+        <script src="script.js"> </script>
     </body>
 </html>

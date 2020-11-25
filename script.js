@@ -1,3 +1,6 @@
+let display = document.getElementById("number-display");
+
+
 function operate (a,operator,b){
     //addition
     if (operator == "+"){
@@ -31,4 +34,8 @@ function multiply(a, b){
 
 function divide(a,b){
     return (a / b);
+}
+
+function clearDisplay(){
+    document.getElementById("number-display").value = "test";
 }
