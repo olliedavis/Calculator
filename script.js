@@ -37,5 +37,10 @@ function divide(a,b){
 }
 
 function clearDisplay(){
-    document.getElementById("number-display").value = "test";
+    document.getElementById("number-display").value = "0";
+}
+
+function inputNumbers(input) {
+    let total = document.getElementById("number-display").value += input;
+    console.log(total);
 }

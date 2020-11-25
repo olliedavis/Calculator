@@ -26,13 +26,12 @@ header{
     width: 24vw;
     height: 6vh;
     text-align: end;
-    font-family: "VT323", monospace;
-    color: darkgreen;
+    color: white;
     font-size: 30px;
 }
 
 #number-display::placeholder{
-    color: darkgreen;
+    color: white;
     font-size: 30px;
 }
 
