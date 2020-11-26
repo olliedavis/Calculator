@@ -1,53 +1,31 @@
 let display = document.getElementById("number-display");
-
-
-function operate (a,operator,b){
-    //addition
-    if (operator == "+"){
-        add(a,b);
-    } 
-    //subtraction
-    else if (operator == "-") {
-        subtract(a,b);
-    }
-    //multiplication
-    else if (operator == "*"){
-        return multiply(a,b)
-    }
-    //division
-    else if (operator == "/"){
-        divide(a,b);
-    }
-}
-
-function add(a,b){
-    return (a + b);
-}
-
-function subtract(a,b){
-    return (a - b);
-}
-
-function multiply(a, b){
-    return (a * b)
-}
-
-function divide(a,b){
-    return (a / b);
-}
+let inputVal = 0;
+let valueArr = [];
+let operatorChoice;
+let total = 0;
 
 function clearDisplay(){
-    document.getElementById("number-display").value = "0";
+    display.value = "";
 }
 
-function inputNumbers(input) {
-    let inputOne = input;
+function inputNumbers(value){
+    inputVal += value;
+    display.value = inputVal;
+}
 
 function inputOperator(operator){
-    let operatorOne = operator;
-function nextValue
+    valueArr.push(inputVal);
+    value = 0;
+    operatorChoice = operator;
+    return operatorChoice;
+}
 
-
-
+function sum(){
+    valueArr.push(inputVal)
+    if(operatorChoice = "+"){
+        total = valueArr[0] + valueArr[1];
+        display.value = total;
+    }
+}
 
 //document.getElementById("number-display").value += input;
