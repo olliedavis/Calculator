@@ -41,6 +41,13 @@ function clearDisplay(){
 }
 
 function inputNumbers(input) {
-    let total = document.getElementById("number-display").value += input;
-    console.log(total);
-}
+    let inputOne = input;
+
+function inputOperator(operator){
+    let operatorOne = operator;
+function nextValue
+
+
+
+
+//document.getElementById("number-display").value += input;
