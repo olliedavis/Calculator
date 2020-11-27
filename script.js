@@ -7,18 +7,24 @@ let currentArr = [];
 
 function clearDisplay(){
     display.value = "";
-    currentArr = []
+    currentArr = [];
 }
 
-function inputNumbers(value){
+function firstSum(value){
     currentArr.push(value);
+    inputVal = currentArr.join("");
+    display.value = inputVal;
+}
+
+function secondSum(value){
+    inputVal = 0;
+    currentArr.push(value)
     inputVal = currentArr.join("");
     display.value = inputVal;
 }
 
 function inputOperator(operator){
     valueArr.push(inputVal);
-    value = 0;
     operatorChoice = operator;
     return operatorChoice;
 }
@@ -27,8 +33,21 @@ function sum(){
     valueArr.push(inputVal)
     if(operatorChoice = "+"){
         total = valueArr[0] + valueArr[1];
+        display.value = "";
         display.value = total;
     }
 }
 
-//document.getElementById("number-display").value += input;
+
+
+
+//secondSum{
+//}
+
+function decider(value){
+    if (valueArr[0] = ""){
+        firstSum(value);
+    } else{
+        secondSum(value);
+    }
+}
