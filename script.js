@@ -6,8 +6,7 @@ let total = 0;
 let currentArr = [];
 
 function clearDisplay(){
-    display.value = "";
-    currentArr = [];
+    location.reload();
 }
 
 function firstSum(value){
