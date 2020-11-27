@@ -17,6 +17,7 @@ function firstSum(value){
 
 function secondSum(value){
     inputVal = 0;
+    currentArr = [];
     currentArr.push(value)
     inputVal = currentArr.join("");
     display.value = inputVal;
@@ -44,7 +45,7 @@ function sum(){
 //}
 
 function decider(value){
-    if (valueArr[0] = ""){
+    if (valueArr.length < 1){
         firstSum(value);
     } else{
         secondSum(value);
