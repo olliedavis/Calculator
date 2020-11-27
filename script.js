@@ -3,13 +3,15 @@ let inputVal = 0;
 let valueArr = [];
 let operatorChoice;
 let total = 0;
+let currentArr = [];
 
 function clearDisplay(){
     display.value = "";
 }
 
 function inputNumbers(value){
-    inputVal += value;
+    currentArr.push(value);
+    inputVal = currentArr.join("");
     display.value = inputVal;
 }
 
