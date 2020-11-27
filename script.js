@@ -7,6 +7,7 @@ let currentArr = [];
 
 function clearDisplay(){
     display.value = "";
+    currentArr = []
 }
 
 function inputNumbers(value){
