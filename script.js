@@ -28,10 +28,6 @@ function firstSum(value){
 }
 
 function secondSum(value){
-    if(valueArr[1] == undefined){
-        inputVal = 0;
-        currentArr = [];
-    }
     currentArr.push(value)
     inputVal = currentArr.join("");
     display.value = inputVal;
@@ -39,6 +35,8 @@ function secondSum(value){
 //when run, it takes the number from firstSum and pushes it to a new array. 
 function inputOperator(operator){
     valueArr.push(inputVal);
+    inputVal = 0;
+    currentArr = [];
     operatorChoice = operator;
     return operatorChoice;
 }
