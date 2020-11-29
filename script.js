@@ -34,8 +34,18 @@ function totalSum(){
     valueArr.push(inputVal)
     sum1 = parseFloat(valueArr[0]);
     sum2 = parseFloat(valueArr[1]);
-    if(operatorChoice = "+"){
+    if(operatorChoice == "+"){
         total = (sum1 + sum2);
+    } else if(operatorChoice == "/"){
+        if(sum1 == "0" || sum2 == "0"){
+            alert("Are you tryin to kill me??")
+        } else{
+            total = (sum1 / sum2);
+        }
+    } else if(operatorChoice == "*"){
+        total = (sum1 * sum2);
+    }else if (operatorChoice == "-"){
+        total = (sum1 - sum2);
     }
     display.value = "";
     display.value = total;
@@ -46,10 +56,8 @@ function totalSum(){
 
 /* To Do:
 
-:: Allow user to chain operations
-:: Add other operators
+:: Allow user to chain operations - Currently works if equal is pressed after each sum
 :: Round down total
-:: Create an error message for when the user tries to divide by 0
 :: Add a backspace button
 :: Create darkmode/lightmode swtich
 
