@@ -10,7 +10,7 @@
         </header>
         <main id="calculator">
             <div id="display">
-                <input type="text" name="number-display" class="number-display" id="number-display" value="" placeholder="0" readonly></p>
+                <input type="text" name="number-display" class="number-display" id="number-display" value="" placeholder="0" readonly>
             </div>
             <table id="buttons">
                 <div id="clear-button">
@@ -22,28 +22,22 @@
                         <td><input type="button" id="eight" value="8" class="number-buttons" onclick="decider(8)"></input></td>
                         <td><input type="button" id="nine" value="9" class="number-buttons" onclick="decider(9)"> </input></td>
                         <td><input type="button" id="division"value="/" class ="operator-buttons" onclick="inputOperator('/')"></input></td>
-                    </div>
                     <tr id="second-row">
                         <td><input type="button" id="four" value="4" class="number-buttons" onclick="decider(4)"></input></td>
                         <td><input type="button" id="five" value="5" class="number-buttons" onclick="decider(5)"></input></td>
                         <td><input type="button" id="six" value="6" class="number-buttons" onclick="decider(6)"></input></td>
                         <td><input type="button" id="multiply" value="*" class="operator-buttons" onclick="inputOperator('*')"></input></td>
-
-                    </div>
                     <tr id="third-row">
                         <td><input type="button" id="one" value="1" class="number-buttons" onclick="decider(1)"></input></td>
                         <td><input type="button" id="two" value="2" class="number-buttons" onclick="decider(2)"></input></td>
                         <td><input type="button" id="three" value="3" class="number-buttons" onclick="decider(3)"></input></td>
                         <td><input type="button" id="minus" value="-" class="operator-buttons" onclick="inputOperator('-')"></input></td>
-
-                    </div>
                     <tr id="fourth-row">
                         <td><input type="button" id="zero" value="0" class="number-buttons" onclick="decider(0)"> </input></td>
                         <td><input type="button" id="decimal" value="." class="number-buttons" onclick="decider('.')"></input></td>
                         <td><input type="button" id="equals" value="=" class="operator-buttons" onclick="sum()"></input></td>
                         <td><input type="button" id="add" value="+" class="operator-buttons" onclick="inputOperator('+')"></input></td>
                     </div>
-                </div>
             </table>
         </main>
         <script src="script.js"> </script>
