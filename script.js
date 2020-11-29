@@ -11,7 +11,6 @@ let sum2 = 0;
 function clearDisplay(){
     location.reload();
 }
-//Checks the valueArr to see if the first number has been chosen, if not then it knows that the value entered is the first sum.  
 
 
 //takes the value of the function and pushes it to the array, displaying it in the process. When pressed again, it gets added to the array and then joined together to make one number. 
@@ -23,7 +22,7 @@ function sum(value){
 
 
 
-//when run, it takes the number from sum and pushes it to a new array. 
+//takes the number from sum and pushes it to a new array. 
 function inputOperator(operator){
     valueArr.push(inputVal);
     inputVal = 0;
@@ -31,7 +30,7 @@ function inputOperator(operator){
     operatorChoice = operator;
     return operatorChoice;
 }
-//when run, it takes the takes both the strings from the valueArr array and retuns a floating point number which is added together
+//takes both the strings from the valueArr array and retuns a floating point number which is added together
 function totalSum(){
     valueArr.push(inputVal)
     if(operatorChoice = "+"){
