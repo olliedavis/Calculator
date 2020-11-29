@@ -19,10 +19,12 @@ function sum(value){
     display.value = inputVal;
 }
 
-//takes the number from sum and pushes it to a new array. 
+//takes the number from sum and pushes it to a new array
 function inputOperator(operator){
-    valueArr.push(inputVal);
-    inputVal = 0;
+    if (!valueArr.length == 1){
+        valueArr.push(inputVal);
+        inputVal = 0;
+    };
     currentArr = [];
     operatorChoice = operator;
     return operatorChoice;
@@ -30,18 +32,16 @@ function inputOperator(operator){
 //takes both the strings from the valueArr array and retuns a floating point number which is added together
 function totalSum(){
     valueArr.push(inputVal)
+    sum1 = parseFloat(valueArr[0]);
+    sum2 = parseFloat(valueArr[1]);
     if(operatorChoice = "+"){
-        sum1 += parseFloat(valueArr[0]);
-        sum2 += parseFloat(valueArr[1]);
         total = (sum1 + sum2);
-        display.value = "";
-        display.value = total;
-        inputVal = 0
-        valueArr[0] = total;
-        valueArr.pop();
-        valueArr.pop();
     }
-}
+    display.value = "";
+    display.value = total;
+    valueArr[0] = total;
+    valueArr.length = 1;
+    }
 
 
 /* To Do:
