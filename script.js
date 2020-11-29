@@ -12,15 +12,12 @@ function clearDisplay(){
     location.reload();
 }
 
-
 //takes the value of the function and pushes it to the array, displaying it in the process. When pressed again, it gets added to the array and then joined together to make one number. 
 function sum(value){
     currentArr.push(value);
     inputVal = currentArr.join("");
     display.value = inputVal;
 }
-
-
 
 //takes the number from sum and pushes it to a new array. 
 function inputOperator(operator){
@@ -43,3 +40,13 @@ function totalSum(){
 }
 
 
+/* To Do:
+
+:: Allow user to chain operations
+:: Add other operators
+:: Round down total
+:: Create an error message for when the user tries to divide by 0
+:: Add a backspace button
+:: Create darkmode/lightmode swtich
+
+*/
