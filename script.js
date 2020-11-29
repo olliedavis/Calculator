@@ -36,6 +36,10 @@ function totalSum(){
         total = (sum1 + sum2);
         display.value = "";
         display.value = total;
+        inputVal = 0
+        valueArr[0] = total;
+        valueArr.pop();
+        valueArr.pop();
     }
 }
 
