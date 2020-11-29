@@ -12,27 +12,18 @@ function clearDisplay(){
     location.reload();
 }
 //Checks the valueArr to see if the first number has been chosen, if not then it knows that the value entered is the first sum.  
-function decider(value){
-    if (valueArr.length < 1){
-        firstSum(value);
-    } else{
-        secondSum(value);
-    }
-}
+
 
 //takes the value of the function and pushes it to the array, displaying it in the process. When pressed again, it gets added to the array and then joined together to make one number. 
-function firstSum(value){
+function sum(value){
     currentArr.push(value);
     inputVal = currentArr.join("");
     display.value = inputVal;
 }
 
-function secondSum(value){
-    currentArr.push(value)
-    inputVal = currentArr.join("");
-    display.value = inputVal;
-}
-//when run, it takes the number from firstSum and pushes it to a new array. 
+
+
+//when run, it takes the number from sum and pushes it to a new array. 
 function inputOperator(operator){
     valueArr.push(inputVal);
     inputVal = 0;
@@ -40,8 +31,8 @@ function inputOperator(operator){
     operatorChoice = operator;
     return operatorChoice;
 }
-//when run, it takes the takes both the strings from firstSum and secondSum and retuns a floating point number which is added together
-function sum(){
+//when run, it takes the takes both the strings from the valueArr array and retuns a floating point number which is added together
+function totalSum(){
     valueArr.push(inputVal)
     if(operatorChoice = "+"){
         sum1 += parseFloat(valueArr[0]);
