@@ -28,7 +28,7 @@ function firstSum(value){
 }
 
 function secondSum(value){
-    if(currentArr[1] == undefined){
+    if(valueArr[1] == undefined){
         inputVal = 0;
         currentArr = [];
     }
