@@ -29,34 +29,35 @@ function inputOperator(operator){
     operatorChoice = operator;
     return operatorChoice;
 }
-//takes both the strings from the valueArr array and retuns a floating point number which is added together
+//takes both the strings from the valueArr array and retuns a floating point number;
 function totalSum(){
     valueArr.push(inputVal)
     sum1 = parseFloat(valueArr[0]);
     sum2 = parseFloat(valueArr[1]);
     if(operatorChoice == "+"){
         total = (sum1 + sum2);
-    } else if(operatorChoice == "/"){
+    } else if(operatorChoice == "*"){
+        total = (sum1 * sum2);
+    }else if (operatorChoice == "-"){
+        total = (sum1 - sum2);
+    }else if(operatorChoice == "/"){
         if(sum1 == "0" || sum2 == "0"){
             alert("Are you tryin to kill me??")
         } else{
             total = (sum1 / sum2);
         }
-    } else if(operatorChoice == "*"){
-        total = (sum1 * sum2);
-    }else if (operatorChoice == "-"){
-        total = (sum1 - sum2);
     }
     display.value = "";
     display.value = total;
     valueArr[0] = total;
     valueArr.length = 1;
+    return total;
     }
 
 
 /* To Do:
 
-:: Allow user to chain operations - Currently works if equal is pressed after each sum
+:: Allow user to chain operations - Currently works if equal is pressed after each sum 
 :: Round down total
 :: Add a backspace button
 :: Create darkmode/lightmode swtich
