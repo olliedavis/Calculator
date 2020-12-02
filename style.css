@@ -23,11 +23,12 @@ header{
     background-color: #2f3332; 
     border: 0;
     border-radius: 6px;
-    width: 24vw;
+    width: 23.8vw;
     height: 6vh;
     text-align: end;
     color: white;
     font-size: 30px;
+    padding-right: 20px;
 }
 
 #number-display::placeholder{
@@ -60,7 +61,15 @@ header{
 
 
 }
-
+#backspace{
+    width:6vw;
+    height: 3vh;
+    background-color: #ff2a2a;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 30px;
+}
 #clear{
     width: 18.25vw;
     height: 3vh;

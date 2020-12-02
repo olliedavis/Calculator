@@ -67,10 +67,14 @@ function totalSum(){
     return total;
     }
 
+function backButton(){
+    currentArr = currentArr.slice(0,-1);
+    inputVal = inputVal.slice(0,-1);
+    display.value = inputVal;
+}
 
 /* To Do:
 
-:: Add a backspace button
 :: Create darkmode/lightmode swtich
 :: Keyboard Shortcuts
 
