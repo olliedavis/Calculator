@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=VT323&display=swap');
 
 body{
-    background-color: #202020;
+    background-color: #bbbbbb;
     color: white;
     margin: auto;
 }
@@ -20,19 +20,19 @@ header{
 #number-display{
     display: block;
     margin: auto;
-    background-color: #2f3332; 
+    background-color: #ffffff; 
     border: 0;
     border-radius: 6px;
     width: 23.8vw;
     height: 6vh;
     text-align: end;
-    color: white;
+    color: #000000;
     font-size: 30px;
     padding-right: 20px;
 }
 
 #number-display::placeholder{
-    color: white;
+    color: #000000;
     font-size: 30px;
 }
 
@@ -43,8 +43,8 @@ header{
 .number-buttons{
     width: 6vw;
     height: 8vh;
-    background-color: #141313;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     border: 0;
     border-radius: 5px;
     font-size: 25px;
@@ -53,8 +53,8 @@ header{
 .operator-buttons{
     width: 6vw;
     height: 8vh;
-    background-color: #2f3332;
-    color: white;
+    background-color: #acacac;
+    color: #000000;
     border: 0;
     border-radius: 5px;
     font-size: 25px;
@@ -79,11 +79,12 @@ header{
     border-radius: 5px;
     font-size: 15px;
 }
+
 #light-switch{
     width: 24.5vw;
     height: 3vh;
-    background-color: #141313;
-    color: yellow;
+    background-color: #ffffff;
+    color: #000000;
     border: 0;
     border-radius: 5px;
 }

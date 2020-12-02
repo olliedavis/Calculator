@@ -6,6 +6,7 @@ let total = 0;
 let currentArr = [];
 let sum1 = 0;
 let sum2 = 0;
+let lightSwitch=0
 
 //Reloads the page, resetting all variables in the process
 function clearDisplay(){
@@ -73,9 +74,27 @@ function backButton(){
     display.value = inputVal;
 }
 
+function lightToggle(){
+    if(lightSwitch == "0"){
+        lightSwitchOn()
+    } else{
+        lightSwitchOff();
+    }
+}
+
+function lightSwitchOn(){
+    document.querySelector("link[href='style.css']").href = "light-mode.css";
+    lightSwitch++;
+}
+
+function lightSwitchOff(){
+    document.querySelector("link[href='light-mode.css']").href = "style.css";
+    lightSwitch--;
+
+}
+
 /* To Do:
 
-:: Create darkmode/lightmode swtich
 :: Keyboard Shortcuts
 
 
