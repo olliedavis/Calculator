@@ -7,7 +7,7 @@ let currentArr = [];
 let sum1 = 0;
 let sum2 = 0;
 
-//Reloads the page, clearing all variables in the process
+//Reloads the page, resetting all variables in the process
 function clearDisplay(){
     location.reload();
 }
@@ -19,17 +19,25 @@ function sum(value){
     display.value = inputVal;
 }
 
-//takes the number from sum and pushes it to a new array
+//takes the number from sum and pushes it to a new array.
+//if valueArr is not populated, then we know it's the first time it's being run. As such, it will push inputVal to valueArr and then get reset
+//if operatorChoice is populated, then we know it's not the first time being run. So it returns the total so it can be chained without the use of the equal operator 
 function inputOperator(operator){
     if (!valueArr.length == 1){
         valueArr.push(inputVal);
         inputVal = 0;
     };
+    if(operatorChoice != undefined) {
+        totalSum()
+        inputVal = 0;
+
+    }
     currentArr = [];
     operatorChoice = operator;
     return operatorChoice;
 }
 //takes both the strings from the valueArr array and retuns a floating point number;
+//once total has been defined, sets the valueArr equal only the total so that it can be chained
 function totalSum(){
     valueArr.push(inputVal)
     sum1 = parseFloat(valueArr[0]);
@@ -47,19 +55,20 @@ function totalSum(){
             total = (sum1 / sum2);
         }
     }
-    display.value = "";
     display.value = total;
     valueArr[0] = total;
     valueArr.length = 1;
+
     return total;
     }
 
 
 /* To Do:
 
-:: Allow user to chain operations - Currently works if equal is pressed after each sum 
 :: Round down total
 :: Add a backspace button
 :: Create darkmode/lightmode swtich
+:: Keyboard Shortcuts
+
 
 */
