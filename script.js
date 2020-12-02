@@ -14,6 +14,9 @@ function clearDisplay(){
 
 //takes the value of the function and pushes it to the array, displaying it in the process. When pressed again, it gets added to the array and then joined together to make one number. 
 function sum(value){
+    if(value == "." && currentArr.includes(".")){
+        value = "";
+        }
     currentArr.push(value);
     inputVal = currentArr.join("");
     display.value = inputVal;
@@ -55,9 +58,11 @@ function totalSum(){
             total = (sum1 / sum2);
         }
     }
+    total = (Math.floor(total * 100000) / 100000);
     display.value = total;
     valueArr[0] = total;
     valueArr.length = 1;
+    operatorChoice = "";
 
     return total;
     }
@@ -65,7 +70,6 @@ function totalSum(){
 
 /* To Do:
 
-:: Round down total
 :: Add a backspace button
 :: Create darkmode/lightmode swtich
 :: Keyboard Shortcuts
